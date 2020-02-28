@@ -2367,6 +2367,8 @@ body.is-preload #wrapper {
 	visibility: visible;
 }
 
+/*CSS Gradient Animator*/
+
 body {
 	background: linear-gradient(225deg, #ffabab, #ffdaab, #ddffab, #abe4ff, #d9abff);
 	background-size: 400% 400%;
