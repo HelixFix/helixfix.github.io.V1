@@ -1415,7 +1415,7 @@ body {
 	background-size: auto, 100% 100%;
 	background-attachment: fixed;
 	overflow-y: scroll; */
-	background-color: #fce77d;
+	background-color: #faf0dc;
 }
 
 body.is-preload *,
@@ -1437,7 +1437,7 @@ textarea,
 select {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
-	color: #777777;
+	color: #faf0dc;
 	font-size: 20pt;
 	line-height: 1.75em;
 }
@@ -1495,7 +1495,7 @@ h4,
 h5,
 h6 {
 	font-weight: 400;
-	color: #363636;
+	color: #faf0dc;
 }
 
 h1 {
@@ -1685,7 +1685,7 @@ p {
 
 header>p {
 	margin: 0.5em 0 0 0;
-	color: #aaa;
+	color: #faf0dc;
 }
 
 @media screen and (max-width: 736px) {
@@ -1930,7 +1930,7 @@ ul.actions li:first-child {
 #nav a {
 	position: relative;
 	display: inline-block;
-	color: #F96167;
+	color: #0b4141;
 	width: 1em;
 	height: 1em;
 	line-height: 0.9em;
@@ -2099,7 +2099,7 @@ body.is-preload #wrapper {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	background: #ffffff;
+	background: #0b4141;
 	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 	-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 	-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -2302,20 +2302,20 @@ body.is-preload #wrapper {
 }
 
 #footer a {
-	color: #F96167;
-	color: #F96167(255, 255, 255, 0.65);
+	color: #0b4141;
+	color: #0b4141(255, 255, 255, 0.65);
 	-moz-transition: color .25s ease-in-out;
 	-webkit-transition: color .25s ease-in-out;
 	-ms-transition: color .25s ease-in-out;
 	transition: color .25s ease-in-out;
 }
 
-#footer a:hover {
+/* #footer a:hover {
 	color: red;
-}
+} */
 
 #footer .copyright {
-	color: #F96167;
+	color: #0b4141;
 	list-style: none;
 	padding-left: 0;
 }
