@@ -1435,7 +1435,7 @@ body,
 input,
 textarea,
 select {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: Raleway;
 	font-weight: 300;
 	color: #faf0dc;
 	font-size: 20pt;
@@ -1746,7 +1746,7 @@ button,
 	transition: background-color .25s ease-in-out;
 	-webkit-appearance: none;
 	display: inline-block;
-	background-color: #222222;
+	background-color: #ff6864;
 	color: #ffffff;
 	border: 0;
 	cursor: pointer;
