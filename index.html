@@ -150,10 +150,25 @@
 				</form> -->
 				<div class="kwes-form">
 					<form method="POST" action="https://kwes.io/api/foreign/forms/1SjYsYaCjufFmEuJ5eoB">
-						<label for="name">Your Name</label>
-						<input type="text" name="name" rules="required|max:255">
-				
-						<button type="submit">Submit</button>
+						<div class="row ">
+
+							<div class="col-6 col-12-medium">
+								<input type="text" name="name" placeholder="Nom" rules="required|max:255"/>
+							</div>
+							<div class="col-6 col-12-medium">
+								<input type="text" name="email" placeholder="Adresse électronique"/>
+							</div>
+							<div class="col-12">
+								<input type="text" name="subject" placeholder="Sujet" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<input type="submit" value="Envoyer" />
+							</div>
+
+						</div>
 					</form>
 				</div> 
 			</article>
