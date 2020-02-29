@@ -125,9 +125,9 @@
 				<header>
 					<h2>Contactez-moi</h2>
 				</header>
-				<form action="#" method="post">
+				<!-- <form action="#" method="post">
 					<div>
-						<div class="row">
+						<div class="row ">
 
 							<div class="col-6 col-12-medium">
 								<input type="text" name="name" placeholder="Nom" />
@@ -147,7 +147,15 @@
 
 						</div>
 					</div>
-				</form>
+				</form> -->
+				<div class="kwes-form">
+					<form method="POST" action="https://kwes.io/api/foreign/forms/1SjYsYaCjufFmEuJ5eoB">
+						<label for="name">Your Name</label>
+						<input type="text" name="name" rules="required|max:255">
+				
+						<button type="submit">Submit</button>
+					</form>
+				</div> 
 			</article>
 
 		</div>
@@ -168,6 +176,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="https://kwes.io/js/kwes.js"></script>
 
 </body>
 
