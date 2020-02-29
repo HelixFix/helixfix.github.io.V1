@@ -1431,13 +1431,21 @@ body.is-preload *:after {
 	transition: none !important;
 }
 
+p {
+	font-family: Raleway;
+	font-weight: 300;
+	color: #faf0dc;
+	font-size: 20pt;
+	line-height: 1.75em;
+}
+
 body,
 input,
 textarea,
 select {
 	font-family: Raleway;
 	font-weight: 300;
-	color: #faf0dc;
+	color: black;
 	font-size: 20pt;
 	line-height: 1.75em;
 }
@@ -2379,7 +2387,6 @@ body.is-preload #wrapper {
 	-moz-animation: AnimationName 30s ease infinite;
 	animation: AnimationName 30s ease infinite;
   }
-
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
