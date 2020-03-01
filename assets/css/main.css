@@ -1435,7 +1435,6 @@ p {
 	font-family: Raleway;
 	font-weight: 300;
 	color: #faf0dc;
-	font-size: 20pt;
 	line-height: 1.75em;
 }
 
@@ -2405,6 +2404,9 @@ body.is-preload #wrapper {
 } */
   
 /* Cachons la case à cocher */
+
+/*custom checkbox*/
+
 form p {
 	position: relative; /* permet de positionner la checkbox cachée */
 }
