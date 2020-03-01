@@ -153,24 +153,32 @@
 						<div class="row ">
 
 							<div class="col-6 col-12-medium">
-								<input type="text" name="name" placeholder="Nom" rules="required|max:255"/>
+								<input type="text" name="name" placeholder="Nom" rules="required|max:255" />
 							</div>
 							<div class="col-6 col-12-medium">
-								<input type="text" name="email" placeholder="Adresse électronique" rules="email"/>
+								<input type="text" name="email" placeholder="Adresse électronique" rules="email" />
 							</div>
 							<div class="col-12">
-								<input type="text" name="subject" placeholder="Sujet"/>
+								<input type="text" name="subject" placeholder="Sujet" />
 							</div>
 							<div class="col-12">
 								<textarea name="message" placeholder="Message" rows="6" rules="required"></textarea>
 							</div>
 							<div class="col-12">
-								<input type="submit" value="Envoyer" style="font-size:20pt;line-height:1.75em;"/>
+								<div class="kw-checkbox-group container" rules="required">
+									<input type="checkbox" name="consent" value="consent" id="consent"
+										label="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #faf0dc;">J’ai lu et accepte </span><a
+										href="#" style="color: #faf0dc;">la politique
+										de confidentialitée</a><span style="color: #faf0dc;"> de ce site</span>
+								</div>
+							</div>
+							<div class="col-12">
+								<input type="submit" value="Envoyer" style="font-size:20pt;line-height:1.75em;" />
 							</div>
 
 						</div>
 					</form>
-				</div> 
+				</div>
 			</article>
 
 		</div>
@@ -178,7 +186,8 @@
 		<!-- Footer -->
 		<div id="footer">
 			<ul class="copyright">
-				<li>&copy; 2020 <a href="https://github.com/HelixFix/helixfix.github.io" target="_blank"><span>Jérôme Rinner</span></a></li>
+				<li>&copy; 2020 <a href="https://github.com/HelixFix/helixfix.github.io" target="_blank"><span>Jérôme
+							Rinner</span></a></li>
 				<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
 				<li><a href="mentions-legales.html">Mentions légales </a></li>
 			</ul>
