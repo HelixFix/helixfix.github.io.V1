@@ -2768,3 +2768,9 @@ figure:hover+span {
 		left: 125%;
 	}
 }
+
+/* Réseaux sociaux*/
+.social {
+	padding-left: 50%;
+	padding-right: 50%;
+}
