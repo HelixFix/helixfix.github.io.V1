@@ -2495,7 +2495,6 @@ form p {
 	box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 6px rgba(203, 34, 237, .2);
 }
 
-
 /*Animation texte accueil*/
 
 @-webkit-keyframes lightSpeedIn {
@@ -2737,7 +2736,6 @@ figure:hover+span {
 	opacity: 1;
 }
 
-
 /* Shine */
 .hover14 figure {
 	position: relative;
@@ -2769,4 +2767,20 @@ figure:hover+span {
 	100% {
 		left: 125%;
 	}
+}
+/* Jeu de la vie*/
+#home {
+    
+    position:absolute;
+    z-index:999;
+}
+
+.one {
+    position:absolute;
+    z-index:-999;
+}
+
+#game {
+	position:absolute;
+	z-index:-999;
 }
