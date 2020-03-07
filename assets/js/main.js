@@ -217,18 +217,18 @@
 
 /**
  * Constructor for the Game of Life object
- * 
+ *
  * @author Qbit
  * @version 0.1
  */
 function Game(canvas, cfg) {
-  
+
     // Properties
     this.canvas   = canvas;
     this.ctx      = canvas.getContext("2d");
     this.matrix   = undefined;
     this.round    = 0;
-    
+
     // Merge of the default and delivered config.
     var defaults = {
         cellsX    : 100,
@@ -239,19 +239,19 @@ function Game(canvas, cfg) {
         cellColor : "#ccc"
     };
     this.cfg = $.extend({}, defaults, cfg);
-    
+
     // Initialize the canvas and matrix.
     this.init();
 }
 
 /**
  * Prototype of the Game of Life object
- * 
+ *
  * @author Qbit
  * @version 0.1
  */
 Game.prototype = {
-    
+
     /**
      * Initializes the canvas object and the matrix.
      */
@@ -259,7 +259,7 @@ Game.prototype = {
         // set canvas dimensions
         this.canvas.width  = this.cfg.cellsX * this.cfg.cellSize;
         this.canvas.height = this.cfg.cellsY * this.cfg.cellSize;
-        
+
         // initialize matrix
         this.matrix = new Array(this.cfg.cellsX);
         for (var x = 0; x < this.matrix.length; x++) {
@@ -268,10 +268,10 @@ Game.prototype = {
                 this.matrix[x][y] = false;
             }
         }
-        
+
         this.draw();
     },
-    
+
     /**
      * Draws the entire game on the canvas.
      */
@@ -281,7 +281,7 @@ Game.prototype = {
         this.canvas.width = this.canvas.width;
         this.ctx.strokeStyle = this.cfg.gridColor;
         this.ctx.fillStyle = this.cfg.cellColor;
-        
+
         // draw grid
         for (x = 0.5; x < this.cfg.cellsX * this.cfg.cellSize; x += this.cfg.cellSize) {
           this.ctx.moveTo(x, 0);
@@ -294,7 +294,7 @@ Game.prototype = {
         }
 
         this.ctx.stroke();
-        
+
         // draw matrix
         for (x = 0; x < this.matrix.length; x++) {
             for (y = 0; y < this.matrix[x].length; y++) {
@@ -307,7 +307,7 @@ Game.prototype = {
             }
         }
     },
-    
+
     /**
      * Calculates the new state by applying the rules.
      * All changes were made in a buffer matrix and swapped at the end.
@@ -319,13 +319,13 @@ Game.prototype = {
         for (x = 0; x < buffer.length; x++) {
             buffer[x] = new Array(this.matrix[x].length);
         }
-        
+
         // calculate one step
         for (x = 0; x < this.matrix.length; x++) {
             for (y = 0; y < this.matrix[x].length; y++) {
                 // count neighbours
                 var neighbours = this.countNeighbours(x, y);
-                
+
                 // use rules
                 if (this.matrix[x][y]) {
                     if (neighbours == 2 || neighbours == 3)
@@ -338,24 +338,24 @@ Game.prototype = {
                 }
             }
         }
-        
+
         // flip buffers
         this.matrix = buffer;
         this.round++;
         this.draw();
     },
-    
+
     /**
      * Counts the living neighbours of the cell at the given coordinates.
      * A cell can have up to 8 neighbours. Borders are concidered as dead.
-     * 
+     *
      * @param cx horizontal coordinates of the given cell
      * @param cy vertical coordinates of the given cell
      * @return the number of living neighbours
      */
     countNeighbours: function(cx, cy) {
         var count = 0;
-        
+
         for (var x = cx-1; x <= cx+1; x++) {
             for (var y = cy-1; y <= cy+1; y++) {
                 if (x == cx && y == cy)
@@ -366,10 +366,10 @@ Game.prototype = {
                     count++;
             }
         }
-        
+
         return count;
     },
-    
+
     /**
      * Clears the entire matrix, by setting all cells to false.
      */
@@ -379,10 +379,10 @@ Game.prototype = {
                 this.matrix[x][y] = false;
             }
         }
-        
+
         this.draw();
     },
-    
+
     /**
      * Fills the matrix with a random pattern.
      * The chance that a cell will be alive is at 30%.
@@ -393,10 +393,10 @@ Game.prototype = {
                 this.matrix[x][y] = Math.random() < 0.3;
             }
         }
-        
+
         this.draw();
     },
-    
+
     /**
      * Toggels the state of one cell at the given coordinates.
      *
@@ -429,6 +429,8 @@ $("#run").click(function() {
     timer = undefined;
     $(this).text("Start");
   }
+  console.log(click);
+  
 });
 
 // make a single step in the animation loop
@@ -460,7 +462,7 @@ game.canvas.addEventListener("click", gameOnClick, false);
 function gameOnClick(e) {
     var x;
     var y;
-    
+
     // determen click position
     if (e.pageX !== undefined && e.pageY !== undefined) {
         x = e.pageX;
@@ -469,15 +471,15 @@ function gameOnClick(e) {
         x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
         y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
     }
-    
+
     // make it relativ to canvas
     x -= game.canvas.offsetLeft;
     y -= game.canvas.offsetTop;
-    
+
     // calculate clicked cell
     x = Math.floor(x/game.cfg.cellSize);
     y = Math.floor(y/game.cfg.cellSize);
-    
+
     game.toggleCell(x, y);
 }
 

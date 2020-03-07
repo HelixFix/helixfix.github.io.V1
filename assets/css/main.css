@@ -126,6 +126,7 @@ section {
 
 body {
 	line-height: 1;
+	position: relative;
 }
 
 ol,
@@ -2769,18 +2770,15 @@ figure:hover+span {
 	}
 }
 /* Jeu de la vie*/
-#home {
-    
-    position:absolute;
-    z-index:999;
-}
-
-.one {
-    position:absolute;
-    z-index:-999;
-}
-
 #game {
-	position:absolute;
-	z-index:-999;
+	position: absolute;
+	margin-left: -30%;
+	margin-top: -5%;
+}
+#footer {
+	position: relative;
+}
+
+#controls {
+	position: relative;
 }
