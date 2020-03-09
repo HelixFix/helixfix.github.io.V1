@@ -126,6 +126,7 @@ section {
 
 body {
 	line-height: 1;
+	position: relative;
 }
 
 ol,
@@ -2774,4 +2775,22 @@ figure:hover+span {
 	width: 100%;
 	padding-left: 50%;
 	padding-right: 50%;
+	display: inline-block;
+	list-style: none;
+	text-align: center;
+	padding: 2em 0 0 0;
+}
+/* Jeu de la vie*/
+#game {
+	position: absolute;
+	margin-left: -30%;
+	margin-top: -5%;
+}
+
+#footer {
+	position: relative;
+}
+
+#controls {
+	position: relative;
 }
