@@ -126,6 +126,7 @@ section {
 
 body {
 	line-height: 1;
+	position: relative;
 }
 
 ol,
@@ -2257,7 +2258,7 @@ body.is-preload #wrapper {
 #main>.panel.intro header p {
 	letter-spacing: -0.015em;
 	font-size: 1.25em;
-	margin: 0.25em 0 0 0;
+	margin: 0.25em 0 1.25em 0;
 }
 
 @media screen and (max-width: 980px) {
@@ -2771,6 +2772,28 @@ figure:hover+span {
 
 /* Réseaux sociaux*/
 .social {
+	width: 100%;
 	padding-left: 50%;
 	padding-right: 50%;
+
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+.social a {
+	padding-left: 1em;
+}
+/* Jeu de la vie*/
+#game {
+	position: absolute;
+	margin-left: -43%;
+	margin-top: -5%;
+}
+
+#footer {
+	position: relative;
+}
+
+#controls {
+	position: relative;
 }
