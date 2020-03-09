@@ -2771,6 +2771,7 @@ figure:hover+span {
 
 /* Réseaux sociaux*/
 .social {
+	width: 100%;
 	padding-left: 50%;
 	padding-right: 50%;
 }
