@@ -2871,9 +2871,6 @@ hr.resume {
 	font-family: Helvetica;
 }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
-
 /*Modal*/
 #modal {
 	left: 50%;
