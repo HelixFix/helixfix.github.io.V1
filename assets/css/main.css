@@ -2258,7 +2258,7 @@ body.is-preload #wrapper {
 #main>.panel.intro header p {
 	letter-spacing: -0.015em;
 	font-size: 1.25em;
-	margin: 0.25em 0 0 0;
+	margin: 0.25em 0 1.25em 0;
 }
 
 @media screen and (max-width: 980px) {
@@ -2777,7 +2777,7 @@ figure:hover+span {
 	padding-right: 50%;
 
 	text-align: center;
-	padding: 2em 0 0 0;
+	padding: 0 0 0 0;
 }
 /* Jeu de la vie*/
 #game {
