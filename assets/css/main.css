@@ -2781,7 +2781,7 @@ figure:hover+span {
 }
 
 .social a {
-	padding-left: 1em;
+	margin-left: 1em;
 }
 /* Jeu de la vie*/
 #game {
