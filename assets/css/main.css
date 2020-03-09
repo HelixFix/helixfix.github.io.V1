@@ -2775,9 +2775,9 @@ figure:hover+span {
 	width: 100%;
 	padding-left: 50%;
 	padding-right: 50%;
-
 	text-align: center;
 	padding: 0 0 0 0;
+	margin-top: 1em;
 }
 
 .social a {
@@ -2796,4 +2796,12 @@ figure:hover+span {
 
 #controls {
 	position: relative;
+}
+
+hr.resume {
+	border: 2px solid #ff6864;
+	border-radius: 5px;
+	padding: 0;
+	margin: 0;
+
 }
