@@ -2775,8 +2775,7 @@ figure:hover+span {
 	width: 100%;
 	padding-left: 50%;
 	padding-right: 50%;
-	display: inline-block;
-	list-style: none;
+
 	text-align: center;
 	padding: 2em 0 0 0;
 }
