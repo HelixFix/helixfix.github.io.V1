@@ -2902,7 +2902,7 @@ hr.resume {
 }
 
 /*Modal*/
-#modalTransfert {
+.modal {
 	left: 38%;
 	margin: -250px 0 0 -32%;
 	opacity: 0;
@@ -2917,13 +2917,7 @@ hr.resume {
 	-webkit-transition: all .4s ease-in-out
   }
 
-#modalTransfert:target {
-	opacity: 1;
-	top: 7%;
-	visibility: visible
-  }
-
-#modalTransfert .header, #modalTransfert .footer {
+.modal .header, .modal .footer {
 	border-bottom: 1px solid #1ABC9C;
 	border-radius: 5px 5px 0 0	;
 	-webkit-border-radius: 5px 5px 0 0	;
@@ -2932,7 +2926,7 @@ hr.resume {
 	-o-border-radius: 5px 5px 0 0	;
 }
 
-#modalTransfert .footer {
+.modal .footer {
 	border: none;
 	border-top: 1px solid #e7e7e7;
 	border-radius: 0 0 5px 5px	;
@@ -2942,13 +2936,13 @@ hr.resume {
 	-o-border-radius: 0 0 5px 5px	;
 }
 
-#modalTransfert h2 {
+.modal h2 {
 	margin: 0;
 	color: #fff
 	}
 
-#modalTransfert .btn { float: right }
-#modalTransfert .copy, #modalTransfert .header, #modalTransfert .footer {
+.modal .btn { float: right }
+.modal .copy, .modal .header, .modal .footer {
 	padding: 10px;
 	color: #fff
 	}
@@ -2961,9 +2955,9 @@ hr.resume {
 	color: #fff
 	}
 
-#modalTransfert .copy { background: #46CFB0 }
+.modal .copy { background: #46CFB0 }
 
-#modalTransfert .overlay {
+.modal .overlay {
 	background-color: #000;
 	background: rgba(0,0,0,.8);
 	height: 100%;
@@ -2983,105 +2977,17 @@ hr.resume {
 	background-color: #E74C3C;
 	}
 
-	/*Allociné*/
-
-#modalCiné {
-	left: 38%;
-	margin: -250px 0 0 -32%;
-	opacity: 0;
-	position: absolute;
-	top: -50%;
-	visibility: hidden;
-	width: 88%;
-	box-shadow: 0 3px 7px rgba(0,0,0,.25);
-	box-sizing: border-box;
-	transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out
+#modalTransfert:target {
+	opacity: 1;
+	top: 7%;
+	visibility: visible
 	}
 
 #modalCiné:target {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
-	}
-
-#modalCiné .header, #modalCiné .footer {
-	border-bottom: 1px solid #1ABC9C;
-	border-radius: 5px 5px 0 0	;
-	-webkit-border-radius: 5px 5px 0 0	;
-	-moz-border-radius: 5px 5px 0 0	;
-	-ms-border-radius: 5px 5px 0 0	;
-	-o-border-radius: 5px 5px 0 0	;
 }
-
-#modalCiné .footer {
-	border: none;
-	border-top: 1px solid #e7e7e7;
-	border-radius: 0 0 5px 5px	;
-	-webkit-border-radius: 0 0 5px 5px	;
-	-moz-border-radius: 0 0 5px 5px	;
-	-ms-border-radius: 0 0 5px 5px	;
-	-o-border-radius: 0 0 5px 5px	;
-}
-
-#modalCiné h2 {
-	margin: 0;
-	color: #fff
-	}
-
-#modalCiné .btn { float: right }
-#modalCiné .copy, #modalCiné .header, #modalCiné .footer {
-	padding: 10px;
-	color: #fff
-	}
-
-.modal-content {
-	background: #34BC9D;
-	position: relative;
-	z-index: 20;
-	border-radius: 5px;
-	color: #fff
-	}
-
-#modalCiné .copy { background: #46CFB0 }
-
-#modalCiné .overlay {
-	background-color: #000;
-	background: rgba(0,0,0,.8);
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10
-	}
-
-.copy a {
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-	padding: 5px 10px;
-	border-radius: 5px;
-	background-color: #E74C3C;
-	}
-
-		/*Bomberman*/
-
-#modalBomberman {
-	left: 38%;
-	margin: -250px 0 0 -32%;
-	opacity: 0;
-	position: absolute;
-	top: -50%;
-	visibility: hidden;
-	width: 88%;
-	box-shadow: 0 3px 7px rgba(0,0,0,.25);
-	box-sizing: border-box;
-	transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out
-	}
 
 #modalBomberman:target {
 	opacity: 1;
@@ -3089,145 +2995,44 @@ hr.resume {
 	visibility: visible
 	}
 
-#modalBomberman .header, #modalBomberman .footer {
-	border-bottom: 1px solid #1ABC9C;
-	border-radius: 5px 5px 0 0	;
-	-webkit-border-radius: 5px 5px 0 0	;
-	-moz-border-radius: 5px 5px 0 0	;
-	-ms-border-radius: 5px 5px 0 0	;
-	-o-border-radius: 5px 5px 0 0	;
-}
-
-#modalBomberman .footer {
-	border: none;
-	border-top: 1px solid #e7e7e7;
-	border-radius: 0 0 5px 5px	;
-	-webkit-border-radius: 0 0 5px 5px	;
-	-moz-border-radius: 0 0 5px 5px	;
-	-ms-border-radius: 0 0 5px 5px	;
-	-o-border-radius: 0 0 5px 5px	;
-}
-
-#modalBomberman h2 {
-	margin: 0;
-	color: #fff
-	}
-
-#modalBomberman .btn { float: right }
-#modalBomberman .copy, #modalBomberman .header, #modalBomberman .footer {
-	padding: 10px;
-	color: #fff
-	}
-
-.modal-content {
-	background: #34BC9D;
-	position: relative;
-	z-index: 20;
-	border-radius: 5px;
-	color: #fff
-	}
-
-#modalBomberman .copy { background: #46CFB0 }
-
-#modalBomberman .overlay {
-	background-color: #000;
-	background: rgba(0,0,0,.8);
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10
-	}
-
-.copy a {
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-	padding: 5px 10px;
-	border-radius: 5px;
-	background-color: #E74C3C;
-	}
-
-			/*Inauguration*/
-
-#modalInauguration {
-	left: 38%;
-	margin: -250px 0 0 -32%;
-	opacity: 0;
-	position: absolute;
-	top: -50%;
-	visibility: hidden;
-	width: 88%;
-	box-shadow: 0 3px 7px rgba(0,0,0,.25);
-	box-sizing: border-box;
-	transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out
-	}
-
 #modalInauguration:target {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
-	}
-
-#modalInauguration .header, #modalInauguration .footer {
-	border-bottom: 1px solid #1ABC9C;
-	border-radius: 5px 5px 0 0	;
-	-webkit-border-radius: 5px 5px 0 0	;
-	-moz-border-radius: 5px 5px 0 0	;
-	-ms-border-radius: 5px 5px 0 0	;
-	-o-border-radius: 5px 5px 0 0	;
 }
 
-#modalInauguration .footer {
-	border: none;
-	border-top: 1px solid #e7e7e7;
-	border-radius: 0 0 5px 5px	;
-	-webkit-border-radius: 0 0 5px 5px	;
-	-moz-border-radius: 0 0 5px 5px	;
-	-ms-border-radius: 0 0 5px 5px	;
-	-o-border-radius: 0 0 5px 5px	;
+#modalDico:target {
+	opacity: 1;
+	top: 7%;
+	visibility: visible
 }
 
-#modalInauguration h2 {
-	margin: 0;
-	color: #fff
-	}
+#modalMulti:target {
+	opacity: 1;
+	top: 7%;
+	visibility: visible
+}
 
-#modalInauguration .btn { float: right }
-#modalInauguration .copy, #modalBInauguration .header, #modalInauguration .footer {
-	padding: 10px;
-	color: #fff
-	}
+#modalConvert:target {
+	opacity: 1;
+	top: 7%;
+	visibility: visible
+}
 
-.modal-content {
-	background: #34BC9D;
-	position: relative;
-	z-index: 20;
-	border-radius: 5px;
-	color: #fff
-	}
+#modalInte1:target {
+	opacity: 1;
+	top: 7%;
+	visibility: visible
+}
 
-#modalInauguration .copy { background: #46CFB0 }
+#modalInte2:target {
+	opacity: 1;
+	top: 7%;
+	visibility: visible
+}
 
-#modalInauguration .overlay {
-	background-color: #000;
-	background: rgba(0,0,0,.8);
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10
-	}
-
-.copy a {
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-	padding: 5px 10px;
-	border-radius: 5px;
-	background-color: #E74C3C;
-	}
+#modalWordpress:target {
+	opacity: 1;
+	top: 7%;
+	visibility: visible
+}
