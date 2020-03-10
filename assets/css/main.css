@@ -2826,6 +2826,7 @@ figure:hover+span {
 	  transform: rotateZ(360deg);
 	  -webkit-transform-origin: center center;
 	  transform-origin: center center; } }
+	  
 /* Réseaux sociaux*/
 .social {
 	width: 100%;
@@ -2873,13 +2874,13 @@ hr.resume {
 
 /*Modal*/
 #modalTransfert {
-	left: 50%;
+	left: 38%;
 	margin: -250px 0 0 -32%;
 	opacity: 0;
 	position: absolute;
 	top: -50%;
 	visibility: hidden;
-	width: 65%;
+	width: 88%;
 	box-shadow: 0 3px 7px rgba(0,0,0,.25);
 	box-sizing: border-box;
 	transition: all .4s ease-in-out;
@@ -2953,83 +2954,85 @@ hr.resume {
 	background-color: #E74C3C;
 	}
 
-	  #modalCiné {
-		left: 50%;
-		margin: -250px 0 0 -32%;
-		opacity: 0;
-		position: absolute;
-		top: -50%;
-		visibility: hidden;
-		width: 65%;
-		box-shadow: 0 3px 7px rgba(0,0,0,.25);
-		box-sizing: border-box;
-		transition: all .4s ease-in-out;
-		-moz-transition: all .4s ease-in-out;
-		-webkit-transition: all .4s ease-in-out
-	  }
-	
-	#modalCiné:target {
-		opacity: 1;
-		top: 7%;
-		visibility: visible
-	  }
-	
-	#modalCiné .header, #modalCiné .footer {
-		border-bottom: 1px solid #1ABC9C;
-		border-radius: 5px 5px 0 0	;
-		-webkit-border-radius: 5px 5px 0 0	;
-		-moz-border-radius: 5px 5px 0 0	;
-		-ms-border-radius: 5px 5px 0 0	;
-		-o-border-radius: 5px 5px 0 0	;
+	/*Allociné*/
+
+#modalCiné {
+	left: 38%;
+	margin: -250px 0 0 -32%;
+	opacity: 0;
+	position: absolute;
+	top: -50%;
+	visibility: hidden;
+	width: 88%;
+	box-shadow: 0 3px 7px rgba(0,0,0,.25);
+	box-sizing: border-box;
+	transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out
 	}
-	
-	#modalCiné .footer {
-		border: none;
-		border-top: 1px solid #e7e7e7;
-		border-radius: 0 0 5px 5px	;
-		-webkit-border-radius: 0 0 5px 5px	;
-		-moz-border-radius: 0 0 5px 5px	;
-		-ms-border-radius: 0 0 5px 5px	;
-		-o-border-radius: 0 0 5px 5px	;
+
+#modalCiné:target {
+	opacity: 1;
+	top: 7%;
+	visibility: visible
 	}
-	
-	#modalCiné h2 {
-		margin: 0;
-		color: #fff
-		}
-	
-	#modalCiné .btn { float: right }
-	#modalCiné .copy, #modalCiné .header, #modalCiné .footer {
-		padding: 10px;
-		color: #fff
-		}
-	
-	.modal-content {
-		background: #34BC9D;
-		position: relative;
-		z-index: 20;
-		border-radius: 5px;
-		color: #fff
-		}
-	
-	#modalCiné .copy { background: #46CFB0 }
-	
-	#modalCiné .overlay {
-		background-color: #000;
-		background: rgba(0,0,0,.8);
-		height: 100%;
-		left: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 10
-		}
-	
-	.copy a {
-		color: #fff;
-		text-decoration: none;
-		display: inline-block;
-		padding: 5px 10px;
-		border-radius: 5px;
-		background-color: #E74C3C;
-		}
+
+#modalCiné .header, #modalCiné .footer {
+	border-bottom: 1px solid #1ABC9C;
+	border-radius: 5px 5px 0 0	;
+	-webkit-border-radius: 5px 5px 0 0	;
+	-moz-border-radius: 5px 5px 0 0	;
+	-ms-border-radius: 5px 5px 0 0	;
+	-o-border-radius: 5px 5px 0 0	;
+}
+
+#modalCiné .footer {
+	border: none;
+	border-top: 1px solid #e7e7e7;
+	border-radius: 0 0 5px 5px	;
+	-webkit-border-radius: 0 0 5px 5px	;
+	-moz-border-radius: 0 0 5px 5px	;
+	-ms-border-radius: 0 0 5px 5px	;
+	-o-border-radius: 0 0 5px 5px	;
+}
+
+#modalCiné h2 {
+	margin: 0;
+	color: #fff
+	}
+
+#modalCiné .btn { float: right }
+#modalCiné .copy, #modalCiné .header, #modalCiné .footer {
+	padding: 10px;
+	color: #fff
+	}
+
+.modal-content {
+	background: #34BC9D;
+	position: relative;
+	z-index: 20;
+	border-radius: 5px;
+	color: #fff
+	}
+
+#modalCiné .copy { background: #46CFB0 }
+
+#modalCiné .overlay {
+	background-color: #000;
+	background: rgba(0,0,0,.8);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10
+	}
+
+.copy a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #E74C3C;
+	}
