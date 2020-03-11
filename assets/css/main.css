@@ -2361,7 +2361,8 @@ body.is-preload #wrapper {
 
 .tooltip .tooltiptext {
 	visibility: hidden;
-	width: 250px;
+	/*width: 250px;*/
+	width: calc(100% - 1.25em);
 	background-color: black;
 	color: #fff;
 	text-align: center;
@@ -2853,6 +2854,7 @@ hr.resume {
 	width: 88%;
 	box-shadow: 0 3px 7px rgba(0,0,0,.25);
 	box-sizing: border-box;
+	z-index: 20;
 	transition: all .4s ease-in-out;
 	-moz-transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out
@@ -2883,10 +2885,18 @@ hr.resume {
 	}
 
 .modal .btn { float: right }
-.modal .copy, .modal .header, .modal .footer {
+.modal .copy, .modal .footer {
 	padding: 10px;
 	color: #fff
 	}
+
+.header{
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #fff
+}
 
 .modal-content {
 	background: rgb(0, 131, 115);
