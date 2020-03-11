@@ -2893,8 +2893,8 @@ hr.resume {
 	}
 
 .header{
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
 	padding-left: 10px;
 	padding-right: 10px;
 	color: #fff
