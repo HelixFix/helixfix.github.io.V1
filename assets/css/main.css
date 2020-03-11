@@ -2847,9 +2847,9 @@ hr.resume {
 .modal {
 	opacity: 0;
 	position: fixed;
-	/* max-width: 824px;
+	max-width: 824px;
 	min-width: 334px;
-	width: 100%; */
+	width: 100%;
 	top: -50%;
 	visibility: hidden;
 	box-shadow: 0 3px 7px rgba(0,0,0,.25);
