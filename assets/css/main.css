@@ -2349,6 +2349,22 @@ body.is-preload #wrapper {
 		margin-left: 0.5em;
 	}
 
+	.modal {
+		opacity: 0;
+		position: fixed;
+		/* max-width: 824px;
+		min-width: 334px;
+		width: 100%; */
+		top: -50%;
+		visibility: hidden;
+		box-shadow: 0 3px 7px rgba(0,0,0,.25);
+		box-sizing: border-box;
+		z-index: 20;
+		transition: all .4s ease-in-out;
+		-moz-transition: all .4s ease-in-out;
+		-webkit-transition: all .4s ease-in-out
+	  }
+
 }
 
 /*Tooltips*/
@@ -2844,23 +2860,6 @@ hr.resume {
 }
 
 /*Modal*/
-.modal {
-	margin: 0 auto;
-	opacity: 0;
-	position: absolute;
-	position: fixed;
-	max-width: 824px;
-	min-width: 334px;
-	top: -50%;
-	visibility: hidden;
-	width: 88%;
-	box-shadow: 0 3px 7px rgba(0,0,0,.25);
-	box-sizing: border-box;
-	z-index: 20;
-	transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out
-  }
 
 .modal .header, .modal .footer {
 	border-bottom: 1px solid rgb(0, 131, 115); /*border*/
@@ -2905,7 +2904,8 @@ hr.resume {
 	position: relative;
 	z-index: 20;
 	border-radius: 5px;
-	color: #fff
+	color: #fff;
+
 	}
 
 .modal .copy { background: rgb(0, 165, 145) }
@@ -2934,16 +2934,6 @@ hr.resume {
 	.copy p {
 	font-family: helvetica;
 	}
-
-#modalTransfert:target {
-	opacity: 1;
-	top: 24%;
-	visibility: visible
-	}
-
-#hideTransfert:target {
-	visibility: hidden;
-}
 
 #modalCiné:target {
 	opacity: 1;
