@@ -2918,7 +2918,7 @@ hr.resume {
   }
 
 .modal .header, .modal .footer {
-	border-bottom: 1px solid #1ABC9C;
+	border-bottom: 1px solid rgb(0, 131, 115); /*border*/
 	border-radius: 5px 5px 0 0	;
 	-webkit-border-radius: 5px 5px 0 0	;
 	-moz-border-radius: 5px 5px 0 0	;
@@ -2948,14 +2948,14 @@ hr.resume {
 	}
 
 .modal-content {
-	background: #34BC9D;
+	background: rgb(0, 131, 115);
 	position: relative;
 	z-index: 20;
 	border-radius: 5px;
 	color: #fff
 	}
 
-.modal .copy { background: #46CFB0 }
+.modal .copy { background: rgb(0, 165, 145) }
 
 .modal .overlay {
 	background-color: #000;
@@ -3031,7 +3031,7 @@ hr.resume {
 	visibility: visible
 }
 
-#modalWordpress:target {
+#modalInauguration:target {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
