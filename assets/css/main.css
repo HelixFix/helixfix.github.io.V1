@@ -2817,7 +2817,7 @@ figure:hover+span {
 	transform: scale(1.1); 
 }
 /* Jeu de la vie*/
-#game {
+/* #game {
 	position: absolute;
 	margin-left: -43%;
 	margin-top: -5%;
@@ -2829,7 +2829,7 @@ figure:hover+span {
 
 #controls {
 	position: relative;
-}
+} */
 
 hr.resume {
 	border: 2px solid #ff6864;
@@ -2845,10 +2845,12 @@ hr.resume {
 
 /*Modal*/
 .modal {
-	left: 38%;
-	margin: -250px 0 0 -32%;
+	margin: 0 auto;
 	opacity: 0;
 	position: absolute;
+	position: fixed;
+	max-width: 901px;
+	min-width: 381px;
 	top: -50%;
 	visibility: hidden;
 	width: 88%;
