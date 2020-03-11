@@ -2977,3 +2977,9 @@ hr.resume {
 	top: 7%;
 	visibility: visible
 }
+
+#modalWordpress:target {
+	opacity: 1;
+	top: 7%;
+	visibility: visible
+}
