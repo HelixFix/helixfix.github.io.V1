@@ -2849,8 +2849,8 @@ hr.resume {
 	opacity: 0;
 	position: absolute;
 	position: fixed;
-	max-width: 901px;
-	min-width: 381px;
+	max-width: 824px;
+	min-width: 334px;
 	top: -50%;
 	visibility: hidden;
 	width: 88%;
@@ -2937,7 +2937,7 @@ hr.resume {
 
 #modalTransfert:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 	}
 
@@ -2947,7 +2947,7 @@ hr.resume {
 
 #modalCiné:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 }
 
@@ -2957,7 +2957,7 @@ hr.resume {
 
 #modalBomberman:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 	}
 
@@ -2967,7 +2967,7 @@ hr.resume {
 
 #modalInauguration:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 }
 
@@ -2977,7 +2977,7 @@ hr.resume {
 
 #modalDico:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 }
 
@@ -2987,7 +2987,7 @@ hr.resume {
 
 #modalMulti:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 }
 
@@ -2997,7 +2997,7 @@ hr.resume {
 
 #modalConvert:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 }
 
@@ -3007,7 +3007,7 @@ hr.resume {
 
 #modalInte1:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 }
 
@@ -3017,7 +3017,7 @@ hr.resume {
 
 #modalInte2:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 }
 
@@ -3025,19 +3025,9 @@ hr.resume {
 	visibility: hidden;
 }
 
-#modalInauguration:target {
-	opacity: 1;
-	top: 7%;
-	visibility: visible
-}
-
-#hideInauguration:target {
-	visibility: hidden;
-}
-
 #modalWordpress:target {
 	opacity: 1;
-	top: 7%;
+	top: 24%;
 	visibility: visible
 }
 
