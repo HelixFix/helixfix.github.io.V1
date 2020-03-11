@@ -2941,10 +2941,18 @@ hr.resume {
 	visibility: visible
 	}
 
+#hideTransfert:target {
+	visibility: hidden;
+}
+
 #modalCiné:target {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
+}
+
+#hideCiné:target {
+	visibility: hidden;
 }
 
 #modalBomberman:target {
@@ -2953,10 +2961,18 @@ hr.resume {
 	visibility: visible
 	}
 
+#hideBomberman:target {
+	visibility: hidden;
+}
+
 #modalInauguration:target {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
+}
+
+#hideInauguration:target {
+	visibility: hidden;
 }
 
 #modalDico:target {
@@ -2965,10 +2981,18 @@ hr.resume {
 	visibility: visible
 }
 
+#hideDico:target {
+	visibility: hidden;
+}
+
 #modalMulti:target {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
+}
+
+#hideMulti:target {
+	visibility: hidden;
 }
 
 #modalConvert:target {
@@ -2977,10 +3001,18 @@ hr.resume {
 	visibility: visible
 }
 
+#hideConvert:target {
+	visibility: hidden;
+}
+
 #modalInte1:target {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
+}
+
+#hideInte1:target {
+	visibility: hidden;
 }
 
 #modalInte2:target {
@@ -2989,16 +3021,28 @@ hr.resume {
 	visibility: visible
 }
 
+#hideInte2:target {
+	visibility: hidden;
+}
+
 #modalInauguration:target {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
 }
 
+#hideInauguration:target {
+	visibility: hidden;
+}
+
 #modalWordpress:target {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
+}
+
+#hideWordpress:target {
+	visibility: hidden;
 }
 
 #work p {
