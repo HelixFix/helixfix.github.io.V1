@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic"); */
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");  */
 @import url("fontawesome-all.min.css");
 
 @font-face {
@@ -2916,6 +2916,11 @@ hr.resume {
 	padding: 5px 10px;
 	border-radius: 5px;
 	background-color: #E74C3C;
+	font-family: arial;
+	}
+
+	.copy p {
+	font-family: helvetica;
 	}
 
 #modalTransfert:target {
@@ -2982,4 +2987,16 @@ hr.resume {
 	opacity: 1;
 	top: 7%;
 	visibility: visible
+}
+
+#work p {
+	font-family: helvetica;
+}
+
+input {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+textarea {
+	font-family: 'Source Sans Pro', sans-serif;
 }
