@@ -182,6 +182,7 @@ textarea {
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	align-items: stretch;
+
 }
 
 .row>* {
@@ -2847,9 +2848,15 @@ hr.resume {
 .modal {
 	opacity: 0;
 	position: fixed;
-	max-width: 824px;
+	/* max-width: 824px;
 	min-width: 334px;
-	width: 100%;
+	width: 100%; */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+	width: 70%;
+	padding: 0;
 	top: -50%;
 	visibility: hidden;
 	box-shadow: 0 3px 7px rgba(0,0,0,.25);
@@ -2895,7 +2902,8 @@ hr.resume {
 	padding-bottom: 0.7em;
 	padding-left: 10px;
 	padding-right: 10px;
-	color: #fff
+	color: #fff;
+	line-height: 1.5em;
 }
 
 .modal-content {
@@ -2904,7 +2912,7 @@ hr.resume {
 	z-index: 20;
 	border-radius: 5px;
 	color: #fff;
-
+	
 	}
 
 .modal .copy { background: rgb(0, 165, 145) }

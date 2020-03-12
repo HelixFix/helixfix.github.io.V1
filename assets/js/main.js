@@ -490,3 +490,27 @@ function run() {
 }
 
 game.randomize();
+
+//Responsive
+
+// function toggleFixed () {
+//     var parentwidth = $("#work").width();      
+//     $(".modal").toggleClass("fixed").width(parentwidth);        
+// }
+
+// $(function () {
+  
+//     $("#fixer").on("click", 
+//                    function () {
+    
+//                         toggleFixed();
+//     })
+
+// })
+
+// let new_width = $('.row').width();
+// $('.modal').width(new_width); 
+
+// $( document ).ready(function() {
+//     $('.modal').width($('.row').width());
+// });
